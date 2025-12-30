@@ -8,8 +8,9 @@ const Navbar: React.FC = () => {
     <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0 flex items-center cursor-pointer">
+          <div className="flex-shrink-0 flex items-center cursor-pointer gap-2">
             <img src={Logo} alt="Pacca Pro" className="h-12 w-auto" />
+            <span className="text-xl font-bold text-gray-900">PaccaPro</span>
           </div>
 
           <div className="flex items-center">
