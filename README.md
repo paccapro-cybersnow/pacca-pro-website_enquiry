@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Pacca Pro - Premium Paint Solutions
 
-# Run and deploy your AI Studio app
+A modern landing page for Pacca Pro paint distribution company with WhatsApp integration for customer enquiries.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1IsyA-S3HZdNwt3KcR4viyIrLTENOE2Bt
+- **Modern UI** - Clean, responsive design with Tailwind CSS
+- **WhatsApp Integration** - One-click enquiry via WhatsApp
+- **Optimized Structure** - Production-ready folder organization
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide Icons
 
+## Project Structure
+
+```
+src/
+├── main.tsx              # Entry point
+├── App.tsx               # Root component
+├── assets/               # Images and static files
+├── components/
+│   ├── layout/           # Navbar, Footer
+│   ├── sections/         # Hero, etc.
+│   └── ui/               # Reusable UI components
+├── lib/
+│   ├── constants.ts      # App configuration
+│   └── utils.ts          # Helper functions
+└── types/                # TypeScript interfaces
+```
+
+## Getting Started
+
+**Prerequisites:** Node.js 18+
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000)
+
+## Configuration
+
+Update WhatsApp settings in `src/lib/constants.ts`:
+
+```typescript
+export const WHATSAPP_CONFIG = {
+  phoneNumber: '918768786878',
+  defaultMessage: 'WEBSITE_ENQUIRY',
+};
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## License
+
+© 2025 Pacca Pro. All rights reserved.
